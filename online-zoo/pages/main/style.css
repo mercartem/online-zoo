@@ -1,0 +1,418 @@
+/* Импорт шрифта */
+    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Body */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+h4, p {
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    z-index: 1;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    height: 50px;
+    width: 80px;
+    border: 1.18841px solid #FFFFFF;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo__title {
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+}
+
+.logo__img {
+    position: absolute;
+    left: 11px;
+    top: 23px;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav__menu {
+    display: flex;
+    align-self: center;
+    gap: 6.4%;
+    margin-left: 63px;
+    padding: 0;
+}
+
+.nav__contact-us {
+    white-space: nowrap;
+}
+
+.nav__li, .design__title{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav__li:hover {
+    cursor: pointer;
+    color: #F9804B;
+    transform: scale(1.2);
+}
+
+.nav__about {
+    color: #F9804B;
+}
+
+.nav__about:hover {
+    transform: none;
+}
+
+.design__title:hover {
+    cursor: pointer;
+    color: #F9804B;
+    transform: scale(1.2);
+}
+
+/* main */
+
+/* Watch your favorite animal online */
+
+.watch {
+    position: relative;
+    height: 780px;
+    background: url(/assets/images/Giant\ Panda.png) no-repeat center/cover;
+    margin-top: -80px;
+    margin-bottom: 15px;
+}
+
+.watch__circle {
+    position: absolute;
+    top: 11.8%;
+    left: 50.4%;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+.watch__title {
+    position: absolute;
+    width: 500.31px;
+    height: 400px;
+    left: 55%;
+    top: 21.5%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.watch__title_color {
+    color: #FFEE2E;
+}
+
+.btn {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.watch__btn {
+    position: absolute;
+    left: 61.5%;
+    top: 80.3%;
+}
+
+.btn:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+
+.btn:active {
+    background: #4B9200;
+}
+
+.btn:visited {
+    background: #767474;
+}
+
+/* The Backstage */
+
+.backstage {
+    display: flex;
+    height: 708px;
+}
+
+.backstage__wrapper {
+    margin-top: 125px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+.backstage__img {
+    width: 609px;
+    height: 403px;
+    background: url(/assets/images/bamboo-cap.png);
+    backdrop-filter: blur(2px);
+}
+
+.backstage__title {
+    width: 465px;
+}
+
+.backstage__head {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    margin: 0;
+}
+
+.backstage__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 22px;
+}
+
+.backstage__text-2 {
+    line-height: 138%;
+}
+
+.backstage__head-2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    margin-top: 54px;
+    margin-bottom: 34px;
+}
+
+.flower-1 {
+    width: 220px;
+    height: 605px;   
+    background: url(/assets/images/flower_foto1.png) no-repeat right;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Pets */
+
+.pets {
+    position: relative;
+    height: 1106px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.table__li {
+    width: 364px;
+    height: 424px;
+    border: 1px solid #FA6F32;
+    border-radius: 5px;
+}
+
+.table__li:hover .table__title {
+    transform: translateY(-370px);
+    transition: 1s;
+    color: #FFFFFF;
+}
+
+.table__li:hover .table__img::before {
+    background-color:rgba(0, 0, 0, .5);
+}
+
+.table__li:hover .table__img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.table__li:hover .table__text {
+    transform: scale(1.25);
+}
+
+.table__img {
+    position: relative;
+    width: 364px;
+    height: 366px;
+}
+
+.table__img:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.table__img-panda {
+    background: url(/assets/images/pandas.png);
+}
+
+.table__img-eagle {
+    background: url(/assets/images/eagles.png);
+}
+
+.table__img-gorilla {
+    background: url(/assets/images/gorillas.png);
+}
+
+.table__img-sloth {
+    background: url(/assets/images/slooth.png);
+}
+
+.table__img-cheetah {
+    background: url(/assets/images/cheetahs.png);
+}
+
+.table__img-penguin {
+    background: url(/assets/images/penguins.png);
+}
+
+.table__title {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    padding-left: 15px;
+}
+
+.table__text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.table__text>h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.table__logo-meat {
+    background: url(/assets/icons/meat.svg);
+    width: 48px;
+    height: 38px;
+}
+
+.table__logo-banana {
+    background: url(/assets/icons/banana.svg);
+    width: 33px;
+    height: 40px;
+}
+
+.pets__arrow-left {
+    position: absolute;
+    left: -7%;
+    top: 40.2%;
+    content: "";
+    background: url(/assets/icons/arrow_elips_2.svg);
+    width: 62px;
+    height: 62px;
+}
+
+.pets__arrow-left:hover {
+    cursor: pointer;
+    background: url(/assets/icons/arrow_elips_2-green.svg)
+}
+
+.pets__arrow-right {
+    position: absolute;
+    right: -7%;
+    top: 40.2%;
+    content: "";
+    background: url(/assets/icons/arrow_elips_1.svg);
+    width: 62px;
+    height: 62px;
+}
+
+.pets__arrow-right:hover {
+    cursor: pointer;
+    background: url(/assets/icons/arrow_elips_1-green.svg)
+}
+
+.pets__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flower-2 {
+    position: absolute;
+    background: url(/assets/images/palm_foto.png) no-repeat;
+    width: 300px;
+    height: 460px;
+    bottom: 0;
+}
+
+.flower-3 {
+    position: absolute;
+    background: url(/assets/images/strelitzia\ 1.png) no-repeat;
+    width: 368px;
+    height: 275px;
+    right: 0;
+    bottom: 0;
+}
+
+
+
