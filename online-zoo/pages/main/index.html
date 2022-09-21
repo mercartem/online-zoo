@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo</title>
-    <link rel="stylesheet" href="/assets/styles/normalize.css">
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -13,14 +13,14 @@
         <div class="wrapper header__wrapper">
             <a class="logo" href="#">
                 <h1 class="logo__title">PetStory online</h1>
-                <img class="logo__img" src="/assets/icons/bamboo.svg" alt="bamboo">
+                <img class="logo__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
             </a>
             <nav class="nav">
                 <ul class="nav__menu">
                     <li class="nav__li nav__about"><a href="#" class="nav__li nav__about">About</a></li>
                     <li class="nav__li nav__map">Map</li>
                     <li class="nav__li nav__zoos">Zoos</li>
-                    <li class="nav__li"><a href="../donate/index.html" class="nav__li nav__donate">Donate</a></li>
+                    <li class="nav__li"><a href="../donate" class="nav__li nav__donate">Donate</a></li>
                     <li class="nav__li nav__contact-us">Contact us</li>
                 </ul>
             </nav>
@@ -134,18 +134,20 @@
                         <div class="pick__icon pick__icon-1"></div>
                         <p class="pick__card-text pick__card-text-1">Pay with card</p>
                     </li>
-                    <span class="pick__arrow"></span>
+                    <li class="pick__arrow"></li>
                     <li class="pick__card pick__card-2">
                         <div class="pick__icon pick__icon-2"></div>
                         <p class="pick__card-text pick__card-text-2">Payment goes to the zoo</p>
                     </li>
-                    <span class="pick__arrow"></span>
+                    <li class="pick__arrow"></li>
                     <li class="pick__card pick__card-3">
                         <div class="pick__icon pick__icon-3"></div>
                         <p class="pick__card-text pick__card-text-3">Your favourite animal gets delicious dish</p>
                     </li>
                 </ul>
-                <a class="btn pick__btn" href="../donate/index.html"><button class="btn pick__btn">FEED A FRIEND NOW</button></a>
+                <form action="../donate" class="btn pick__btn">
+                    <button class="btn pick__btn">FEED A FRIEND NOW</button>
+                </form>
             </div>
         </div>
         <div class="testimonials">
@@ -206,10 +208,12 @@
         <div class="wrapper footer__wrapper">
             <div class="footer__contacts">
                 <a class="logo footer__logo" href="#">
-                    <h1 class="logo__title">PetStory online</h1>
-                    <img class="logo__img" src="/assets/icons/bamboo.svg" alt="bamboo">
+                    <div class="logo__title">PetStory online</div>
+                    <img class="logo__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
                 </a>
-                <a class="btn footer__btn" href="../donate/index.html"><button class="btn footer__btn">DONATE FOR VOLONTEERS</button></a>
+                <form action="../donate" class="btn footer__btn">
+                    <button class="btn">DONATE FOR VOLONTEERS</button>
+                </form>
                 <ul class="media">
                     <li><a href="https://facebook.com/" class="media__link media__fb">Facebook</a></li>
                     <li><a href="https://twitter.com/" class="media__link media__twitter">Twitter</a></li>
