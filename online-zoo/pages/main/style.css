@@ -812,6 +812,7 @@ input[type=range]::-webkit-slider-thumb {
     background: none;
     padding: 0 10px;
     margin-right: 10px;
+    outline: none;
 }
 
 .form__btn {
@@ -824,8 +825,6 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-
-
 input:valid:focus + .form__btn {
     border: 1px solid #4B9200;
     color: green;
@@ -834,6 +833,14 @@ input:valid:focus + .form__btn {
 input:invalid:focus + .form__btn {
     border: 1px solid #D31414;
     color: #D31414;
+}
+
+.form__input:valid:focus {
+    border: 0.7px solid #4B9200;
+}
+
+.form__input:invalid:focus {
+    border: 0.7px solid #D31414;
 }
 
 .footer__design {
