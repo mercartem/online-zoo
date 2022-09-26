@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/panda-bear.png">
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a class="logo" href="./index.html">
-                <h1 class="logo__title">PetStory online</h1>
-                <img class="logo__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+            <a class="logo header__logo" href="./index.html">
+                <h1 class="logo__title header__logo-title">PetStory online</h1>
+                <img class="logo__img header__logo-img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+                <img class="logo__img-2 header__logo-img-2" src="../../assets/icons/bamboo2.svg" alt="bamboo">
             </a>
-            <nav class="nav">
+            <nav class="nav header__nav">
                 <ul class="nav__menu">
                     <li class="nav__li nav__about"><a href="#" class="nav__li nav__about">About</a></li>
                     <li class="nav__li nav__map">Map</li>
@@ -27,10 +29,11 @@
             <div class="design">
                 <p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="design__title">Designed by ©</a></p>
             </div>
+            <div class="header__burger"></div>
         </div>
     </header>
     <main class="main">
-        <section class="watch">
+        <section class="watch watch__wrapper">
             <div class="watch__circle"></div>
             <div class="watch__title">
                 <p>Watch your <span class="watch__title_color">favorite</span> animal online</p>
@@ -88,10 +91,10 @@
                         <div class="table__img table__img-sloth"></div>
                         <div class="table__title">
                             <div class="table__text">
-                                <h4>TWO-TOED SLOTH</h4>
-                                <p>Mesoamerica, South America</p>
+                                <h4>ALLIGATORS</h4>
+                                <p>Native to Southeastern U. S.</p>
                             </div>
-                            <div class="table__logo-banana"></div>
+                            <div class="table__logo-meat"></div>
                         </div>
                     </li>
                     <li class="table__li table__cheetah">
@@ -139,7 +142,7 @@
                         <div class="pick__icon pick__icon-2"></div>
                         <p class="pick__card-text pick__card-text-2">Payment goes to the zoo</p>
                     </li>
-                    <li class="pick__arrow"></li>
+                    <li class="pick__arrow pick__arrow_right"></li>
                     <li class="pick__card pick__card-3">
                         <div class="pick__icon pick__icon-3"></div>
                         <p class="pick__card-text pick__card-text-3">Your favourite animal gets delicious dish</p>
