@@ -315,6 +315,10 @@ input[type=range]::-webkit-slider-thumb {
     height: 40px;
 }
 
+.pay__dot:hover .pay__circle {
+    transform: scale(2);
+}
+
 .pay__dot_active {
     background: url(../../assets/icons/roller_icon.svg);
 }
