@@ -82,6 +82,14 @@ h4, p {
     flex-grow: 1;
 }
 
+.nav__logo, .nav__design {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
 .nav__menu {
     display: flex;
     align-self: center;
@@ -128,11 +136,15 @@ h4, p {
 /* Watch your favorite animal online */
 
 .watch {
-    position: relative;
     height: 780px;
     background: url(../../assets/images/Giant\ Panda.png) no-repeat center/cover;
     margin-top: -80px;
     margin-bottom: 15px;
+}
+
+.watch__wrapper {
+    position: relative;
+    height: 100%;
 }
 
 .watch__circle {
@@ -149,7 +161,7 @@ h4, p {
     position: absolute;
     width: 500.31px;
     height: 400px;
-    left: 55%;
+    left: 57%;
     top: 21.5%;
     font-family: 'Roboto';
     font-style: normal;
@@ -176,7 +188,7 @@ h4, p {
 
 .watch__btn {
     position: absolute;
-    left: 61.5%;
+    left: 66%;
     top: 80.3%;
 }
 
@@ -656,6 +668,10 @@ h4, p {
 	-webkit-box-orient: vertical;
 }
 
+.text-2, .text-3 {
+    display: none;
+}
+
 .input-range {
     display: block;
     margin-bottom: 31px;
@@ -886,12 +902,12 @@ input:invalid:focus + .form__btn {
 
     .watch__title {
         font-size: 85px;
-        left: 46.5%;
+        left: 46%;
         top: 21%;
     }
 
     .watch__btn {
-        left: 56.5%;
+        left: 57%;
         top: 82.5%;
     }
 
@@ -1060,8 +1076,20 @@ input:invalid:focus + .form__btn {
         margin-bottom: 30px;
     }
 
+    .testimonials__ava-2 {
+        background: url(../../assets/images/ava-4.png);
+    }
+
     .testimonials__text {
-        width: 255px;
+        width: 251px;
+        -webkit-line-clamp: 16;
+    }
+
+    .text-1 {
+        display: none;
+    }
+    .text-2 {
+        display: -webkit-box;
     }
 
     .input-range {
@@ -1135,8 +1163,46 @@ input:invalid:focus + .form__btn {
         top: 15px;
     }
 
-    .header__nav, .design {
+    .design {
         display: none;
+    }
+
+    .nav__logo, .nav__design {
+        display: block;
+    }
+
+    .nav__logo {
+        margin-bottom: 15px;
+        border: 1px solid white;
+        width: 47px;
+        padding: 5px;
+    }
+
+    .header__nav {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 190px;
+        top: 35px;
+        right: -200px;
+        background: black;
+        padding: 20px;
+        border-radius: 10%;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .header__nav_active {
+        transform: translate(-200px);
+        transition: 1s;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        text-align: start;
+        margin: 0;
+        gap: 5px;
     }
 
     .header__burger {
@@ -1144,6 +1210,18 @@ input:invalid:focus + .form__btn {
         background: url(../../assets/icons/burger_menu.svg);
         width: 18px;
         height: 10px;
+        cursor: pointer;
+    }
+
+    .overlay_active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.6);
+        transition: 2s;
     }
 
     .watch {
@@ -1339,12 +1417,20 @@ input:invalid:focus + .form__btn {
     .testimonials__card {
         width: 570px;
         height: 78px;
+        padding: 13px;
     }
 
     .testimonials__text {
         -webkit-line-clamp: 2;
         margin: 0;
         width: auto;
+    }
+
+    .text-3 {
+        display: -webkit-box;
+    }
+    .text-2, .text-4 {
+        display: none;
     }
 
     .input-range {
@@ -1568,6 +1654,7 @@ input:invalid:focus + .form__btn {
 
     .testimonials__card {
         width: 270px;
+        padding: 9px 13px 17px 13px;
     }
 
     .testimonials__cards {
@@ -1647,6 +1734,7 @@ input:invalid:focus + .form__btn {
 
     .watch__btn {
         top: 96%;
+        left: 0;
     }
 }
 
