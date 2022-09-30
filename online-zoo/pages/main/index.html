@@ -5,37 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/panda-bear.png">
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a class="logo" href="./index.html">
-                <h1 class="logo__title">PetStory online</h1>
-                <img class="logo__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+            <a class="logo header__logo" href="./index.html">
+                <h1 class="logo__title header__logo-title">PetStory online</h1>
+                <img class="logo__img header__logo-img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+                <img class="logo__img-2 header__logo-img-2" src="../../assets/icons/bamboo2.svg" alt="bamboo">
             </a>
-            <nav class="nav">
-                <ul class="nav__menu">
+            <nav class="nav header__nav">
+                <ul class="nav__menu header__menu">
+                    <li class="nav__li nav__logo">
+                        <a class="logo header__logo" href="./index.html">
+                            <h1 class="logo__title header__logo-title">PetStory online</h1>
+                            <img class="logo__img header__logo-img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+                            <img class="logo__img-2 header__logo-img-2" src="../../assets/icons/bamboo2.svg" alt="bamboo">
+                        </a>
+                    </li>
                     <li class="nav__li nav__about"><a href="#" class="nav__li nav__about">About</a></li>
                     <li class="nav__li nav__map">Map</li>
                     <li class="nav__li nav__zoos">Zoos</li>
                     <li class="nav__li"><a href="../donate" class="nav__li nav__donate">Donate</a></li>
                     <li class="nav__li nav__contact-us">Contact us</li>
+                    <li class="nav__ li design nav__design">
+                        <p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="design__title">Designed by ©</a></p>
+                    </li>
                 </ul>
             </nav>
             <div class="design">
                 <p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="design__title">Designed by ©</a></p>
             </div>
+            <div class="header__burger"></div>
+            <div class="overlay"></div>
         </div>
     </header>
     <main class="main">
         <section class="watch">
-            <div class="watch__circle"></div>
-            <div class="watch__title">
-                <p>Watch your <span class="watch__title_color">favorite</span> animal online</p>
+            <div class="wrapper watch__wrapper">
+                <div class="watch__circle"></div>
+                <div class="watch__title">
+                    <p>Watch your <span class="watch__title_color">favorite</span> animal online</p>
+                </div>
+                <button class="btn watch__btn">WATCH ONLINE</button>
             </div>
-            <button class="btn watch__btn">WATCH ONLINE</button>
         </section>
         <section class="backstage">
             <div class="wrapper backstage__wrapper">
@@ -88,10 +104,10 @@
                         <div class="table__img table__img-sloth"></div>
                         <div class="table__title">
                             <div class="table__text">
-                                <h4>TWO-TOED SLOTH</h4>
-                                <p>Mesoamerica, South America</p>
+                                <h4>ALLIGATORS</h4>
+                                <p>Native to Southeastern U. S.</p>
                             </div>
-                            <div class="table__logo-banana"></div>
+                            <div class="table__logo-meat"></div>
                         </div>
                     </li>
                     <li class="table__li table__cheetah">
@@ -139,7 +155,7 @@
                         <div class="pick__icon pick__icon-2"></div>
                         <p class="pick__card-text pick__card-text-2">Payment goes to the zoo</p>
                     </li>
-                    <li class="pick__arrow"></li>
+                    <li class="pick__arrow pick__arrow_right"></li>
                     <li class="pick__card pick__card-3">
                         <div class="pick__icon pick__icon-3"></div>
                         <p class="pick__card-text pick__card-text-3">Your favourite animal gets delicious dish</p>
@@ -169,11 +185,14 @@
                             <div class="testimonials__ava testimonials__ava-2"></div>
                             <p class="testimonials__name">Oskar Samborsky <span class="testimonials__local">Local Austria  •  Yesterday</span></p>
                         </div>
-                        <p class="testimonials__text">
+                        <p class="testimonials__text text-4">
                             Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. 
                             <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                             <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
-
+                        </p>
+                        <p class="testimonials__text text-3">
+                            My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.        
                         </p>
                     </li>
                     <li class="testimonials__card testimonials__card-3">
@@ -181,10 +200,19 @@
                             <div class="testimonials__ava testimonials__ava-3"></div>
                             <p class="testimonials__name">Fredericka Michelin <span class="testimonials__local">Local Austria  •  Yesterday</span></p>
                         </div>
-                        <p class="testimonials__text">
+                        <p class="testimonials__text text-1">
                             The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                             <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met.
                             <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                            
+                        </p>
+                        <p class="testimonials__text text-2">
+                            My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. 
+                            <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                            
+                        </p>
+                        <p class="testimonials__text text-3">
+                            Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            <br>The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I`ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+
                         </p>
                     </li>
                     <li class="testimonials__card testimonials__card-4">
@@ -209,7 +237,7 @@
             <div class="footer__contacts">
                 <a class="logo footer__logo" href="#">
                     <div class="logo__title">PetStory online</div>
-                    <img class="logo__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
+                    <img class="logo__img footer__img" src="../../assets/icons/bamboo.svg" alt="bamboo">
                 </a>
                 <form action="../donate" class="btn footer__btn">
                     <button class="btn">DONATE FOR VOLONTEERS</button>
