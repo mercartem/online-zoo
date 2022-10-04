@@ -814,6 +814,13 @@ input:invalid:focus + .form__btn-2 {
         cursor: pointer;
     }
 
+    .close {
+        background: url(../../assets/icons/close.svg);
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
     .overlay_active {
         display: block;
         position: fixed;
