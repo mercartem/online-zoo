@@ -30,6 +30,9 @@ input.addEventListener('input', () => {
             }
             dotActive[i].classList.add('pay__dot_active');
             dollars[i].classList.add('pay__dollar_active');
+        } else {
+            dotActive[i].classList.remove('pay__dot_active');
+            dollars[i].classList.remove('pay__dollar_active'); 
         }
     }
 })

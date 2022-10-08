@@ -138,7 +138,9 @@ function left() {
     drowL();
     btnNext.addEventListener('click', left)
   }, 500);
-  
+
+  slider2[2].innerHTMl = '';
+  [...slider2[2].children].sort(() => Math.random() - 0.5).forEach(v => slider2[2].append(v));
 }
 
 function drowR() {
@@ -184,6 +186,9 @@ function right() {
     drowR();
     btnPrev.addEventListener('click', right);
   }, 500);
+
+  slider2[0].innerHTMl = '';
+  [...slider2[0].children].sort(() => Math.random() - 0.5).forEach(v => slider2[0].append(v));
 }
 
 drow();
